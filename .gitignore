@@ -1,0 +1,13 @@
+.venv/
+
+data/raw/
+data/processed/
+data/extra_innings/
+
+statcast_batter_quality.csv
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

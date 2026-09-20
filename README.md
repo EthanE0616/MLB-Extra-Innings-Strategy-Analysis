@@ -112,7 +112,7 @@ To partially account for this selection effect, the notebook calculates each bat
 
 Early-season wOBA is shrunk toward league average:
 
-\[
+```math
 \text{Adjusted wOBA}
 =
 \frac{
@@ -121,8 +121,7 @@ PA \times wOBA +
 }{
 PA + 100
 }
-\]
-
+```
 This prevents very small early-season samples from being treated as fully reliable estimates of hitter quality.
 
 ---
@@ -140,7 +139,7 @@ The project compares bunt attempts and swing-away plate appearances in tied extr
 
 The main regression includes a **bunt × inning-half interaction**:
 
-\[
+```math
 \text{logit}(P(\text{win})) =
 \beta_0 +
 \beta_1 \text{Bunt} +
@@ -148,8 +147,7 @@ The main regression includes a **bunt × inning-half interaction**:
 \beta_3(\text{Bunt}\times\text{Bottom}) +
 \beta_4 \text{Inning} +
 \beta_5 \text{Adjusted wOBA}
-\]
-
+```
 Standard errors are clustered by game.
 
 ---
@@ -160,18 +158,18 @@ The project then moves from individual plate appearances to complete extra-innin
 
 For the visiting team, the model uses the empirical distribution of runs scored under each offensive strategy.
 
-If the away team scores \(r\) runs, the home team needs \(r+1\) runs to win.
+If the away team scores r runs, the home team needs (r+1) runs to win.
 
 The home-team win probability is calculated as:
 
-\[
+```math
 P(\text{Home Win})
 =
 \sum_r
 P(\text{Away scores } r)
 \times
 P(\text{Home wins}\mid\text{needs }r+1)
-\]
+```
 
 The bottom-half probabilities are estimated by:
 

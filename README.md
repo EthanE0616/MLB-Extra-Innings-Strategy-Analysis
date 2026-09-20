@@ -1,14 +1,12 @@
-# One Run Changes Everything: MLB Extra-Inning Strategy
+# MLB Extra-Inning Strategy Analysis
 
 A baseball analytics project using Statcast data, statistical modeling, and empirical simulation to study how MLB teams should approach the automatic runner in extra innings.
 
 ## Project Motivation
 
-This project started as a baseball argument.
+Every baseball fan has some sort of "baseball intuition". Mine was thrown for a loop when I watched a compilation of several extra inning outings. I thought to myself: "If you are the away team and you score nothing in the top of the 10th, you are nearly guaranteed to lose, so just bunt and significantly increase your chance of scoring, and then play to prevent the run on defense". This dilemma sparked what would become an extensive analysis of this particular baseball strategy. 
 
-While watching extra-inning games, I kept questioning managerial decisions with the automatic runner on second. Sometimes a team would bunt immediately and give away an out. Other times, a team would swing away when it seemed like moving the runner to third was the obvious choice.
-
-Rather than keep arguing with the television, I wanted to test the decisions with data.
+While watching extra-inning games, I kept questioning managerial decisions with the automatic runner on second. Sometimes a team would bunt immediately and give away an out. Other times, a team would swing away when it seemed like moving the runner to third was the obvious choice. Sometimes this would get quite infuriating, so naturally I wanted to find out why.
 
 The project asks a simple question with a surprisingly complicated answer:
 

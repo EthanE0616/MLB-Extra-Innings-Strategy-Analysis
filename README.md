@@ -14,13 +14,10 @@ The project asks a simple question with a surprisingly complicated answer:
 
 The key idea is that the best strategy should not necessarily maximize expected runs. It should maximize the probability of winning the game.
 
-\[
+```math
 \text{maximize } E[\text{runs}] \neq \text{maximize } P(\text{win})
-\]
-
+```
 That distinction becomes especially important under MLB's automatic-runner rule. One run in the top half creates a lead that still has to be defended. One run in the bottom half of a tie game ends the game immediately.
-
----
 
 ## Research Questions
 
